@@ -1,3 +1,7 @@
+---
+layout: page
+---
+
 # CH 1
 
 ### The Shell

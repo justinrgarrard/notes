@@ -1,3 +1,7 @@
+---
+layout: page
+---
+
 # Missing CS Semester Notes
 
 https://missing.csail.mit.edu/

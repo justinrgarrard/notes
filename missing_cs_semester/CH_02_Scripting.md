@@ -1,3 +1,7 @@
+---
+layout: page
+---
+
 # CH 2
 
 ### Shell Tools and Scripting

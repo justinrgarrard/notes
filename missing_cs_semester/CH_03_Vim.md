@@ -1,3 +1,7 @@
+---
+layout: page
+---
+
 # CH 3
 
 ### Editors (Vim)
