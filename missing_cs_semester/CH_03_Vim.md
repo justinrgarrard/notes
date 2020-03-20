@@ -2,11 +2,9 @@
 layout: page
 ---
 
-# CH 3
+# CH 3 | Editors (Vim)
 
-### Editors (Vim)
-
-Basic Philosophy: You Read More Than You Write
+### Basic Philosophy: You Read More Than You Write
 
 * Mode-based Editing
 ```
