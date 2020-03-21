@@ -6,6 +6,7 @@ layout: page
 
 ### Shell Scripting
 * Control Flow (loops, variables, functions)
+
 ```bash
 #!/bin/bash
 
@@ -24,6 +25,7 @@ for file in $@; do
 done
 ```
 * Single-quote strings are literal, double-quote strings permit variable substitution
+
 ```bash
 foo=bar
 echo "$foo"
@@ -33,6 +35,7 @@ echo '$foo'
 ```
 
 * Built-in Variables
+
 ```
 $0 - Name of the script
 $1 to $9 - Arguments to the script. $1 is the first argument and so on.
@@ -45,6 +48,7 @@ $_ - Last argument from the last command. If you are in an interactive shell, yo
 ```
 
 * Error handling with exit codes
+
 ```bash
 false || echo "Oops, fail"
 # Oops, fail
@@ -63,6 +67,7 @@ false ; echo "This will always run"
 ```
 
 * Shell globbing for wildcards
+
 ```bash
 convert image.{png,jpg}
 # Will expand to
@@ -95,6 +100,7 @@ diff <(ls foo) <(ls bar)
 
 ### Shell Tools
 * Use `find` and `fd` to figure out where files are located
+
 ```bash
 # Find all directories named src
 find . -name src -type d
