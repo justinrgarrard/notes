@@ -41,3 +41,30 @@ New Data --> Model --> Output
 ### CRISP-DM
 
 ![CRISP-DM Model](../resources/crisp_dm.jpg)
+
+| Step  | Description  |
+|---|---|
+| Business Understanding   |  Formulate the process/use case, map the problem to data science tools, iterate |
+| Data Understanding | Assess data sources for strengths and weaknesses |
+| Data Preparation | Clean and restructure data to match use |
+| Modeling | Build a tool that outputs useful information |
+| Evaulation | Determine efficacy and explain usage to others |
+| Deployment | Monitor outputs, refine the system, and apply results |
+
+
+### Other Analytics Techniques and Technologies
+
+| Tool | Description |
+|---|---|
+| Statistics | Descriptive and inferential |
+| Database Querying | Efficient data access |
+| Data Warehousing | Efficient data storage across multiple databases |
+| Regression Analysis | Extension of descriptive/inferential statistics |
+| ML & Data Mining | Machine Learning is a seperate but related discipline; emphasizes cognition and agency |
+
+
+### Summary
+
+* Data Science is a craft, and comes with its own tools
+* The CRISP-DM Model outlines a standard approach for mapping business problems to Data Science tools
+
