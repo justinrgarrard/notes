@@ -13,6 +13,6 @@ https://missing.csail.mit.edu/
 * [CH 05 Command-line Environment](CH_05_CLI.md)
 * [CH 06 Version Control (Git)](CH_06_Git.md)
 * [CH 07 Debugging and Profiling](CH_07_Debug.md)
-* CH 08 Metaprogramming
-* CH 09 Security and Cryptography
+* [CH 08 Metaprogramming](CH_08_Metaprogramming.md)
+* [CH 09 Security and Cryptography](CH_09_Security.md)
 
