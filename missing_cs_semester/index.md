@@ -15,4 +15,7 @@ https://missing.csail.mit.edu/
 * [CH 07 Debugging and Profiling](CH_07_Debug.md)
 * [CH 08 Metaprogramming](CH_08_Metaprogramming.md)
 * [CH 09 Security and Cryptography](CH_09_Security.md)
+* [CH 10 Potpourri](CH_10_Potpourri.md)
+
+### Linux Tools Reference
 

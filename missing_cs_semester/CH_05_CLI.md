@@ -6,23 +6,23 @@ layout: page
 
 ### Job Control
 
+```bash
+# Signals
+
+    CTRL+C      # Job Interrupt
+    CTRL+/      # Job Quit
+    CTRL+Z      # Job Stop
+
+    kill <pid>  # Job Terminate
 ```
-Signals
 
-    CTRL+C      Job Interrupt
-    CTRL+/      Job Quit
-    CTRL+Z      Job Stop
+```bash
+# Running Processes
 
-    kill <pid>  Job Terminate
-```
-
-```
-Running Processes
-
-    jobs        List jobs
-    ps -aux     List processes
-    fg <job_id> Move job to foreground
-    bg <job_id> Move job to background
+    jobs        # List jobs
+    ps -aux     # List processes
+    fg <job_id> # Move job to foreground
+    bg <job_id> # Move job to background
 ```
 
 ### Terminal Multiplexers
@@ -31,8 +31,8 @@ Running Processes
 * Most popular tool is tmux
 * CTRL+b = \<C-b>
 
-```
-tmux Sessions
+```bash
+# tmux Sessions
 
 "A session is an independent workspace with one or more windows"
 
@@ -43,30 +43,30 @@ tmux Sessions
     tmux a attaches the last session. You can use -t flag to specify which
 ```
 
-```
-tmux Windows
+```bash
+# tmux Windows
 
 "Equivalent to tabs in editors or browsers, they are visually separate parts of the same session"
 
-    <C-b> c Creates a new window. To close it you can just terminate the shells doing <C-d>
-    <C-b> N Go to the N th window. Note they are numbered
-    <C-b> p Goes to the previous window
-    <C-b> n Goes to the next window
-    <C-b> , Rename the current window
-    <C-b> w List current windows
+    <C-b> c     # Creates a new window. To close it you can just terminate the shells doing <C-d>
+    <C-b> N     # Go to the N th window. Note they are numbered
+    <C-b> p     # Goes to the previous window
+    <C-b> n     # Goes to the next window
+    <C-b> ,     # Rename the current window
+    <C-b> w     # List current windows
 ```
 
-```
-tmux Panes
+```bash
+# tmux Panes
 
 "Like vim splits, pane let you have multiple shells in the same visual display."
 
-    <C-b> " Split the current pane horizontally
-    <C-b> % Split the current pane vertically
-    <C-b> <direction> Move to the pane in the specified direction. Direction here means arrow keys.
-    <C-b> z Toggle zoom for the current pane
-    <C-b> [ Start scrollback. You can then press <space> to start a selection and <enter> to copy that selection.
-    <C-b> <space> Cycle through pane arrangements.
+    <C-b> \"            # Split the current pane horizontally
+    <C-b> %             # Split the current pane vertically
+    <C-b> <direction>   # Move to the pane in the specified direction. Direction here means arrow keys.
+    <C-b> z             # Toggle zoom for the current pane
+    <C-b> [             # Start scrollback. You can then press <space> to start a selection and <enter> to copy that selection.
+    <C-b> <space>       # Cycle through pane arrangements.
 ```
 
 ### Aliases
@@ -80,18 +80,22 @@ tmux Panes
 
 * Hidden files that represent application configurations
 
-```
-How should you organize your dotfiles? They should be in their own folder, under version control, and symlinked into place using a script. This has the benefits of:
+```bash
+# Dotfile Organization
+
+"How should you organize your dotfiles? They should be in their own folder, under version control, and symlinked into place using a script. This has the benefits of:
 
     Easy installation: if you log in to a new machine, applying your customizations will only take a minute.
     Portability: your tools will work the same way everywhere.
     Synchronization: you can update your dotfiles anywhere and keep them all in sync.
-    Change tracking: you’re probably going to be maintaining your dotfiles for your entire programming career, and version history is nice to have for long-lived projects.
+    Change tracking: you’re probably going to be maintaining your dotfiles for your entire programming career, and version history is nice to have for long-lived projects."
 ```
 
 ### Remote Machines
 
-```
+```bash
+# SSH Basics
+
 # SSH into a Remote Machine
 ssh foo@bar.mit.edu
 
@@ -113,7 +117,9 @@ ssh -L 9999:localhost:8888 foobar@remote_server
 
 * Configure common SSH connections in `~/.ssh/config`.
 
-```
+```bash
+# Example SSH Config
+
 Host vm
     User foobar
     HostName 172.16.174.141
