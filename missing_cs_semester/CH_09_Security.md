@@ -4,6 +4,8 @@ layout: page
 
 # CH 9 | Security
 
+* (Discussion from 2019)[https://missing.csail.mit.edu/2019/security/]
+
 * **Plaintext** represents inputs, while **ciphertext** represents outputs
 
 ### Entropy
@@ -23,16 +25,16 @@ layout: page
 ```bash
 # Hash Example
 
-"An example of a hash function is SHA1, which is used in Git. It maps arbitrary-sized inputs to 160-bit outputs (which can be represented as 40 hexadecimal characters). We can try out the SHA1 hash on an input using the sha1sum command:"
+    "An example of a hash function is SHA1, which is used in Git. It maps arbitrary-sized inputs to 160-bit outputs (which can be represented as 40 hexadecimal characters). We can try out the SHA1 hash on an input using the sha1sum command:"
 
-$ printf 'hello' | sha1sum
-aaf4c61ddcc5e8a2dabede0f3b482cd9aea9434d
-$ printf 'hello' | sha1sum
-aaf4c61ddcc5e8a2dabede0f3b482cd9aea9434d
-$ printf 'Hello' | sha1sum 
-f7ff9e8b7bb2e09b70935a5d785e0cc5d9d0abf0
+    $ printf 'hello' | sha1sum
+    aaf4c61ddcc5e8a2dabede0f3b482cd9aea9434d
+    $ printf 'hello' | sha1sum
+    aaf4c61ddcc5e8a2dabede0f3b482cd9aea9434d
+    $ printf 'Hello' | sha1sum 
+    f7ff9e8b7bb2e09b70935a5d785e0cc5d9d0abf0
 
-"At a high level, a hash function can be thought of as a hard-to-invert random-looking (but deterministic) function..."
+    "At a high level, a hash function can be thought of as a hard-to-invert random-looking (but deterministic) function..."
 ```
 
 ```bash

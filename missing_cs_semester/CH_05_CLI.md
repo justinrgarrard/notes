@@ -85,10 +85,10 @@ layout: page
 
 "How should you organize your dotfiles? They should be in their own folder, under version control, and symlinked into place using a script. This has the benefits of:
 
-    Easy installation: if you log in to a new machine, applying your customizations will only take a minute.
-    Portability: your tools will work the same way everywhere.
-    Synchronization: you can update your dotfiles anywhere and keep them all in sync.
-    Change tracking: you’re probably going to be maintaining your dotfiles for your entire programming career, and version history is nice to have for long-lived projects."
+    * Easy installation: if you log in to a new machine, applying your customizations will only take a minute.
+    * Portability: your tools will work the same way everywhere.
+    * Synchronization: you can update your dotfiles anywhere and keep them all in sync.
+    * Change tracking: you’re probably going to be maintaining your dotfiles for your entire programming career, and version history is nice to have for long-lived projects."
 ```
 
 ### Remote Machines

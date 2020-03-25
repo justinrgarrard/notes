@@ -90,7 +90,7 @@ layout: page
 
 ``` bash
 # Search and Replace
-:s # (substitute) command (documentation).
+    :s # (substitute) command (documentation).
 
     %s/foo/bar/g
         # replace foo with bar globally in file
