@@ -11,7 +11,7 @@ layout: page
 	Normal (Esc)        # for moving around a file and making edits
 	Insert (Esc + i)    # for inserting text
 	Replace (Esc + R)   # for replacing text
-	Visual (Esc + v) (plain, line, or block) mode   # for selecting blocks of text
+	Visual (Esc + v)    # for selecting blocks of text
 	Command-line (:)    # for running a command
 ```
 
@@ -46,7 +46,7 @@ layout: page
     Line numbers:   :{number}<CR>
                     {number}G (line {number})
     Misc: % (corresponding item)
-    Find:   f{character} # find/to forward/backward {character} on the current line
+    Find:   f{character} # find/to forward/backward {character}
             t{character}
             F{character}
             T{character}

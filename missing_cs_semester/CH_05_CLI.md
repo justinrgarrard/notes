@@ -46,7 +46,8 @@ layout: page
 ```bash
 # tmux Windows
 
-"Equivalent to tabs in editors or browsers, they are visually separate parts of the same session"
+"Equivalent to tabs in editors or browsers, they are visually separate parts of
+the same session"
 
     <C-b> c     # Creates a new window. To close it you can just terminate the shells doing <C-d>
     <C-b> N     # Go to the N th window. Note they are numbered
@@ -63,9 +64,11 @@ layout: page
 
     <C-b> \"            # Split the current pane horizontally
     <C-b> %             # Split the current pane vertically
-    <C-b> <direction>   # Move to the pane in the specified direction. Direction here means arrow keys.
+    <C-b> <direction>   # Move to the pane in the specified direction. 
+                        # Direction here means arrow keys.
     <C-b> z             # Toggle zoom for the current pane
-    <C-b> [             # Start scrollback. You can then press <space> to start a selection and <enter> to copy that selection.
+    <C-b> [             # Start scrollback. You can then press <space> to start 
+                        # a selection and <enter> to copy that selection.
     <C-b> <space>       # Cycle through pane arrangements.
 ```
 
@@ -83,12 +86,18 @@ layout: page
 ```bash
 # Dotfile Organization
 
-"How should you organize your dotfiles? They should be in their own folder, under version control, and symlinked into place using a script. This has the benefits of:
+"How should you organize your dotfiles? They should be in their own folder, 
+under version control, and symlinked into place using a script. This has the 
+benefits of:
 
-    * Easy installation: if you log in to a new machine, applying your customizations will only take a minute.
+    * Easy installation: if you log in to a new machine, applying your 
+    customizations will only take a minute.
     * Portability: your tools will work the same way everywhere.
-    * Synchronization: you can update your dotfiles anywhere and keep them all in sync.
-    * Change tracking: you’re probably going to be maintaining your dotfiles for your entire programming career, and version history is nice to have for long-lived projects."
+    * Synchronization: you can update your dotfiles anywhere and keep them 
+    all in sync.
+    * Change tracking: you’re probably going to be maintaining your dotfiles for
+    your entire programming career, and version history is nice to have for 
+    long-lived projects."
 ```
 
 ### Remote Machines

@@ -41,9 +41,15 @@ layout: page
 ### FUSE
 
 ```bash
-"FUSE (Filesystem in User Space) allows filesystems to be implemented by a user program. FUSE lets users run user space code for filesystem calls and then bridges the necessary calls to the kernel interfaces. In practice, this means that users can implement arbitrary functionality for filesystem calls.
+"FUSE (Filesystem in User Space) allows filesystems to be implemented by a user 
+program. FUSE lets users run user space code for filesystem calls and then 
+bridges the necessary calls to the kernel interfaces. In practice, this means 
+that users can implement arbitrary functionality for filesystem calls.
 
-For example, FUSE can be used so whenever you perform an operation in a virtual filesystem, that operation is forwarded through SSH to a remote machine, performed there, and the output is returned back to you. This way, local programs can see the file as if it was in your computer while in reality it’s in a remote server."
+For example, FUSE can be used so whenever you perform an operation in a virtual 
+filesystem, that operation is forwarded through SSH to a remote machine, performed
+there, and the output is returned back to you. This way, local programs can see
+the file as if it was in your computer while in reality it’s in a remote server."
 
 
   sshfs      # Open locally remote files/folder through an SSH connection.

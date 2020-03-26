@@ -17,7 +17,8 @@ layout: page
 	for file in $@; do
 		grep foobar $file > /dev/null 2> /dev/null
 		# When pattern is not found, grep has exit status 1
-		# We redirect STDOUT and STDERR to a null register since we do not care about them
+		# We redirect STDOUT and STDERR to a null register
+		# since we do not care about them
 		if [[ $? -ne 0 ]]; then
 			echo "File $file does not have any foobar, adding one"
 			echo "# foobar" >> "$file"
@@ -26,7 +27,8 @@ layout: page
 ```
 
 ```bash
-# Single-quote strings are literal, double-quote strings permit variable substitution
+# Single-quote strings are literal, 
+# double-quote strings permit variable substitution
 
 	foo=bar
 	echo "$foo"
@@ -44,8 +46,13 @@ layout: page
 	$# 			# Number of arguments
 	$? 			# Return code of the previous command
 	$$ 			# Process Identification number for the current script
-	!! 			# Entire last command, including arguments. A common pattern is to execute a command only for it to fail due to missing permissions, then you can quickly execute it with sudo by doing sudo !!
-	$_ 			# Last argument from the last command. If you are in an interactive shell, you can also quickly get this value by typing Esc followed by .
+	!! 			# Entire last command, including arguments. A common pattern is
+				# to execute a command only for it to fail due to missing 
+				# permissions, then you can quickly execute it with sudo by 
+				# doing sudo !!
+	$_ 			# Last argument from the last command. If you are in an 
+				# interactive shell, you can also quickly get this value by 
+				# typing Esc followed by .
 ```
 
 ```bash

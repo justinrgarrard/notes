@@ -68,7 +68,12 @@ user2 	    84B03D034B409D4E 	password12384B03D034B409D4E 	B4B6603ABC670967E99C7E
 
 ```java
 // Cryptography Pseudocode 
-"Symmetric and asymmetric encryption can be compared to physical locks. A symmetric cryptosystem is like a door lock: anyone with the key can lock and unlock it. Asymmetric encryption is like a padlock with a key. You could give the unlocked lock to someone (the public key), they could put a message in a box and then put the lock on, and after that, only you could open the lock because you kept the key (the private key)."
+"Symmetric and asymmetric encryption can be compared to physical locks. A 
+symmetric cryptosystem is like a door lock: anyone with the key can lock and 
+unlock it. Asymmetric encryption is like a padlock with a key. You could give 
+the unlocked lock to someone (the public key), they could put a message in a box
+and then put the lock on, and after that, only you could open the lock because 
+you kept the key (the private key)."
 
 
 // Symmetric Cryptography
