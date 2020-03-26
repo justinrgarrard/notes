@@ -98,7 +98,7 @@ layout: page
         # replace named Markdown links with plain URLs
 ```
 
-``` Bash
+``` bash
 # Multiple Windows
 	:sp / :vsp  # to split windows
 ```
