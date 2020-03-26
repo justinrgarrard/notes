@@ -11,8 +11,11 @@ layout: page
 
 ### Daemons
 
-```Bash
-"Most computers have a series of processes that are always running in the background rather than waiting for an user to launch them and interact with them. These processes are called daemons and the programs that run as daemons often end with a d to indicate so."
+```bash
+"Most computers have a series of processes that are always running in the
+background rather than waiting for an user to launch them and interact with
+them. These processes are called daemons and the programs that run as daemons
+often end with a d to indicate so."
 
   systemctl start <daemon>    # Start a service   
   systemctl stop <daemon>     # Stop a service
@@ -61,7 +64,7 @@ the file as if it was in your computer while in reality it’s in a remote serve
 
 ### Backups
 
-* (Discussion from 2019)[https://missing.csail.mit.edu/2019/backups/]
+* [Discussion from 2019](https://missing.csail.mit.edu/2019/backups/)
 
 * Version Control != Backup
 
