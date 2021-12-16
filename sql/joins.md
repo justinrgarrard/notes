@@ -2,7 +2,7 @@
 layout: page
 ---
 
-# SQL Joins
+-- SQL Joins
 
 ![Schema Vis](schema-horizontal.svg)
 
@@ -10,7 +10,7 @@ layout: page
 ***Simple Inner Joins***
 
 ```sql
-# Inner Join
+-- Inner Join
 select
 	bookings.starttime
 from
@@ -22,7 +22,7 @@ where
 ```
 
 ```sql
-# Same Inner Join, Different Syntax
+-- Same Inner Join, Different Syntax
 select 
 	bookings.starttime
 from
@@ -35,7 +35,7 @@ where
 ```
 
 ```sql
-# Inner Join w/ Additional Filtering
+-- Inner Join w/ Additional Filtering
 select
 	bookings.starttime as start,
 	facilities.name as name
@@ -52,8 +52,8 @@ order by bookings.starttime;
 ***Fancy Inner Joins***
 
 ```sql
-# Inner Join to the Same Table
-# Requires aliases
+-- Inner Join to the Same Table
+-- Requires aliases
 select distinct
 	recs.firstname as firstname,
 	recs.surname as surname
@@ -65,7 +65,7 @@ order by
 ```
 
 ```sql
-# Double Inner Join
+-- Double Inner Join
 select distinct
 	members.firstname || ' ' || members.surname as member,
 	facilities.name as facility
@@ -80,8 +80,8 @@ order by
 ```
 
 ```sql
-# Double Inner Join w/ Switch Case
-# Notice that we cannot reference cost in the where clause
+-- Double Inner Join w/ Switch Case
+-- Notice that we cannot reference cost in the where clause
 select
 	members.firstname || ' ' ||  members.surname as member,
 	facilities.name,
@@ -109,8 +109,8 @@ order by
 ***Outer Joins***
 
 ```sql
-# Combine "members" with itself, presenting recommenders if
-# they exist or Null otherwise
+-- Combine "members" with itself, presenting recommenders if
+-- they exist or Null otherwise
 select
 	mems.firstname as memfname,
 	mems.surname as memsname,
@@ -126,7 +126,7 @@ order by
 ***Subqueries***
 
 ```sql
-# "Inner Join" but as a Subquery
+-- "Inner Join" but as a Subquery
 select distinct
 	members.firstname,
 	members.surname
@@ -141,7 +141,7 @@ order by
 ```
 
 ```sql
-# "Outer Join" but as a subquery
+-- "Outer Join" but as a subquery
 select distinct
 	members.firstname || ' ' || members.surname as member,
 	(select
@@ -157,7 +157,7 @@ order by
 ```
 
 ```sql
-# Using subqueries to reference columns in the where clause
+-- Using subqueries to reference columns in the where clause
 select
 	member,
 	facility,

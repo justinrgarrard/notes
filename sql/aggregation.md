@@ -2,14 +2,14 @@
 layout: page
 ---
 
-# Aggregation
+-- Aggregation
 
 ![Schema Vis](schema-horizontal.svg)
 
 ***Count***
 
 ```sql
-# Count
+-- Count
 select
 	count(*) as count
 from
@@ -17,7 +17,7 @@ from
 ```
 
 ```sql
-# Count + Projection
+-- Count + Projection
 select
     facid, 
 	(select count(*) from cd.facilities)
@@ -26,7 +26,7 @@ from
 ```
 
 ```sql
-# Count Unique Values
+-- Count Unique Values
 select
 	count(distinct address) as unique_addresses
 from
@@ -65,7 +65,7 @@ order by
 ```
 
 ```sql
-# Non-optimized Date Query w/ Aggregation
+-- Non-optimized Date Query w/ Aggregation
 select
 	facid,
 	extract(month from starttime) as month,
@@ -81,7 +81,7 @@ order by
 ```
 
 ```sql
-# Optimized for Index Query w/ Aggregation
+-- Optimized for Index Query w/ Aggregation
 select
     facid,
     extract(month from starttime) as month,
@@ -98,9 +98,9 @@ order by
 ```
 
 ```sql
-# Demo of the HAVING clause
-## WHERE filters inputs
-## HAVING filters outputs
+-- Demo of the HAVING clause
+---- WHERE filters inputs
+---- HAVING filters outputs
 select
 	facid,
 	sum(slots) as "Total Slots"
@@ -115,9 +115,9 @@ order by
 ```
 
 ```sql
-# When HAVING fails
-## PostgreSQL does not recognize column names in HAVING
-## Hence, we use a subquery here
+-- When HAVING fails
+---- PostgreSQL does not recognize column names in HAVING
+---- Hence, we use a subquery here
 select
 	name, revenue from (
 	  select
@@ -142,7 +142,7 @@ order by
 ***Min***
 
 ```sql
-# Find first date of booking after 2012-09-01
+-- Find first date of booking after 2012-09-01
 select
 	members.surname,
 	members.firstname,
@@ -164,9 +164,9 @@ order by
 ***Misc***
 
 ```sql
-# Using ROLLUP
-## ROLLUP is a PostgreSQL special
-## Mimics numerous UNION ALL statements
+-- Using ROLLUP
+---- ROLLUP is a PostgreSQL special
+---- Mimics numerous UNION ALL statements
 select
 	bookings.facid,
 	extract(month from bookings.starttime) as month,
@@ -183,7 +183,7 @@ order by
 ```
 
 ```sql
-# Strings and Rounding
+-- Strings and Rounding
 select
 	bookings.facid,
 	facilities.name,
@@ -199,8 +199,8 @@ order by
 ```
 
 ```sql
-# Toy Windowing Example
-## Replaces a subquery
+-- Toy Windowing Example
+---- Replaces a subquery
 select count(*) over(), firstname, surname
 	from cd.members
 order by joindate 

@@ -2,14 +2,14 @@
 layout: page
 ---
 
-# SQL Basics
+-- SQL Basics
 
 ![Schema Vis](schema-horizontal.svg)
 
 ***Selection and Ordering***
 
 ```sql
-# Query everything in a table
+-- Query everything in a table
 select
 	*
 from
@@ -17,7 +17,7 @@ from
 ```
 
 ```sql
-# Query by Column
+-- Query by Column
 select
 	name,
 	membercost
@@ -26,7 +26,7 @@ from
 ```
 
 ```sql
-# Query with Qualifiers
+-- Query with Qualifiers
 select
 	*
 from
@@ -36,7 +36,7 @@ where
 ```
 
 ```sql
-# Query with Calculations
+-- Query with Calculations
 select
 	facid,
 	name,
@@ -50,7 +50,7 @@ where
 ```
 
 ```sql
-# Query with Dates
+-- Query with Dates
 select 
 	memid,
 	surname,
@@ -63,7 +63,7 @@ where
 ```
 
 ```sql
-# Query with Aggregation
+-- Query with Aggregation
 select
 	max(joindate) as latest
 from
@@ -71,7 +71,7 @@ from
 ```
 
 ```sql
-# Find latest join date and member info
+-- Find latest join date and member info
 select
 	firstname,
 	surname,
@@ -86,7 +86,7 @@ where joindate = (
 ***Search and Pattern Matching***
 
 ```sql
-# Standard
+-- Standard
 select
 	*
 from
@@ -96,7 +96,7 @@ where
 ```
 
 ```sql
-# Regex
+-- Regex
 select
 	*
 from
@@ -106,7 +106,7 @@ where
 ```
 
 ```sql
-# Hard-coded Expected Response
+-- Hard-coded Expected Response
 select
 	*
 from
@@ -116,7 +116,7 @@ where
 ```
 
 ```sql
-# Subquery Expected Response (Toy Example)
+-- Subquery Expected Response (Toy Example)
 select
 	* 
 from
@@ -130,7 +130,7 @@ where
 ***Switch Case***
 
 ```sql
-# Create new column "cost" using case statement
+-- Create new column "cost" using case statement
 select
 	name, 
 	case when (monthlymaintenance > 100) then

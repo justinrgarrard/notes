@@ -2,14 +2,14 @@
 layout: page
 ---
 
-# Modify Data
+-- Modify Data
 
 ![Schema Vis](schema-horizontal.svg)
 
 ***Insertion***
 
 ```sql
-# Insertion
+-- Insertion
 insert
     into cd.facilities
 	    (facid, name, membercost, guestcost, initialoutlay, monthlymaintenance)
@@ -19,7 +19,7 @@ insert
 ```
 
 ```sql
-# Manual Dynamic ID
+-- Manual Dynamic ID
 insert
 	into cd.facilities
 		(facid, name, membercost, guestcost, initialoutlay, monthlymaintenance)
@@ -30,7 +30,7 @@ insert
 ***Updates***
 
 ```sql
-# Update
+-- Update
 update
 	cd.facilities
 set
@@ -41,7 +41,7 @@ where
 ```
 
 ```sql
-# Update Using Selection
+-- Update Using Selection
 update
 	cd.facilities
 set
@@ -65,8 +65,8 @@ where
 ```
 
 ```sql
-# Update Using Selection
-# PostgreSQL Exclusive (non-standard)
+-- Update Using Selection
+-- PostgreSQL Exclusive (non-standard)
 update
 	cd.facilities
 set
@@ -87,7 +87,7 @@ where
 ***Deletion***
 
 ```sql
-# Deletion
+-- Deletion
 delete from
 	cd.members
 where
@@ -95,7 +95,7 @@ where
 ```
 
 ```sql
-# Deletion w/ Subquery
+-- Deletion w/ Subquery
 delete from
 	cd.members
 where
