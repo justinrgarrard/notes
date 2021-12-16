@@ -2,8 +2,6 @@
 layout: page
 ---
 
-# SQL Information
-
 ### SQL Exercises (Postgresql)
 
 https://pgexercises.com

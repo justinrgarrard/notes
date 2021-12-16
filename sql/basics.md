@@ -2,7 +2,7 @@
 layout: page
 ---
 
--- SQL Basics
+# SQL Basics
 
 ![Schema Vis](schema-horizontal.svg)
 

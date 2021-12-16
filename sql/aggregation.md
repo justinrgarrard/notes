@@ -2,7 +2,7 @@
 layout: page
 ---
 
--- Aggregation
+# Aggregation
 
 ![Schema Vis](schema-horizontal.svg)
 

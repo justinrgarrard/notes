@@ -2,7 +2,7 @@
 layout: page
 ---
 
--- SQL Joins
+# SQL Joins
 
 ![Schema Vis](schema-horizontal.svg)
 
