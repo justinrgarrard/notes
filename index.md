@@ -12,3 +12,4 @@ A collection of notes, written in Markdown and version-controlled with Git.
 * [Data Science for Business](/data_science_for_business/index.md)
 * [Pro Git](/pro_git/index.md)
 * [Linear Algebra](/essence_of_linear_algebra/index.md)
+* [SQL](/sql/index.md)
